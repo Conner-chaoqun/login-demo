@@ -26,6 +26,7 @@ public class LoginDemoApplication implements ApplicationRunner {
         SpringApplication.run(LoginDemoApplication.class, args);
     }
 
+    // init() 仅执行一次，给数据库插入（admin，123456）数据提供登录，第二次运行前请注释
     @Override
     public void run(ApplicationArguments args) throws Exception {
         init();
